@@ -6,7 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {MenubarModule} from 'primeng/menubar';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -18,9 +18,7 @@ import {MenubarModule} from 'primeng/menubar';
   imports: [
     BrowserModule,
     NgbModule,
-
-    // PrimeNG 
-    MenubarModule
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
